@@ -1,6 +1,6 @@
 ---
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: "Darja Petričč"
+author: "Darja Petrič"
 output:
   html_document: default
   pdf_document:
