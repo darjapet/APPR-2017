@@ -1,10 +1,18 @@
-# Analiza podatkov s programom R, 2016/17
+# Turizem v Evropi
 
-Turizem v Evropi
+Analiza podatkov s programom R, 2016/17
 
 ## Tematika
 
-Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na nočitve v posameznih državah, zaposlenot glede na panogo turizma ter potek prej omenjenih dejavnikov v različnih letih. 
+Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na nočitve v posameznih državah, zaposlenost glede na panogo turizma ter potek prej omenjenih dejavnikov v različnih letih.
+
+## Podatki in izgled
+
+Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebaj v različnih leti, za posamezne države po različnih panogah v letu 2015 ali pa za EU28 po različnih letih za različne panoge. 
+
+## Analiza
+
+Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi.
 
 ## Program
 
