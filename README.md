@@ -1,11 +1,10 @@
 # Analiza podatkov s programom R, 2016/17
 
-Repozitorij z gradivi pri predmetu APPR v študijskem letu 2016/17
+Turizem v Evropi
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
-napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na nočitve v posameznih državah, zaposlenot glede na panogo turizma ter potek prej omenjenih dejavnikov v različnih letih. 
 
 ## Program
 
