@@ -4,7 +4,12 @@ Analiza podatkov s programom R, 2016/17
 
 ## Tematika
 
-Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na nočitve v posameznih državah, zaposlenost glede na panogo turizma ter potek prej omenjenih dejavnikov v različnih letih.
+Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na:
+- nočitve v posameznih državah
+- zaposlenost glede na panogo turizma
+- starostna sestava zaposljenih v turizmu
+- spreminjanje nočitev in zaposlenosti glede na leta
+- medsebojni vpliv naštetih dejavnikov v turizmu
 
 ## Podatki in izgled
 
