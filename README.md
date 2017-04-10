@@ -9,15 +9,16 @@ Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, prido
 - zaposlenost glede na panogo turizma
 - starostna sestava zaposljenih v turizmu
 - spreminjanje nočitev in zaposlenosti glede na leta
-- medsebojni vpliv naštetih dejavnikov v turizmu
+
+Cilj naloge je ugotoviti medsebojne relacije med zgoraj naštetimi spremenljivkami.
 
 ## Podatki in izgled
 
-Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebaj v različnih leti, za posamezne države po različnih panogah v letu 2015 ali pa za EU28 po različnih letih za različne panoge. 
+Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebej v različnih leti, za posamezne države po različnih panogah v letu 2015 ali pa za EU28 po različnih letih za različne panoge. Zadnja tabela bo vsebovala starostno sestavo zaposlenih v turizmu v določeni državi po letih. 
 
 ## Analiza
 
-Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi.
+Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi in starostna sestava zaposlenih
 
 ## Program
 
