@@ -18,7 +18,7 @@ Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletni
 
 ## Analiza
 
-Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi in starostna sestava zaposlenih
+Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi in starostna sestava zaposlenih.
 
 ## Program
 
