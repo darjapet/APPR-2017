@@ -28,14 +28,14 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/uvoz.r", encoding = "UTF-8")
+source("uvoz/uvoz1.r", encoding = "UTF-8")
 ```
 
 Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
 z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
-kable(head(druzine))
+kable(head(tabela1))
 head(obcine)
 ```
 
