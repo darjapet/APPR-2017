@@ -16,6 +16,16 @@ Cilj naloge je ugotoviti medsebojne relacije med zgoraj naštetimi spremenljivka
 
 Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebej v različnih leti, za posamezne države po različnih panogah v letih ter starostno sestavo zaposlenih v turizmu v določeni državi po letih. 
 
+Tabela 1 je prenesena z Wikipedije in vključuje 10 najbolj obiskanih držav v Evropi ter je sestavljena na naslednji način:
+- stolpec 1: države
+- stoplec 2: mednarodni turisti v letu 2015
+- stoplec 3: mednarodni turisti v letu 2014
+- stoplec 4: sprememba 2013-2014
+- stoplec 5: sprememba 2014-2015
+
+
+
+
 ## Analiza
 
 Pri analizi podatkov si nameravam ogledati, kako se spreminjajo količine skozi čas v različnih državah Evrope ter kakšna je sestava turizma po panogah v določeni državi in starostna sestava zaposlenih.
