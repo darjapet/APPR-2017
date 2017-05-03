@@ -6,7 +6,7 @@ Analiza podatkov s programom R, 2016/17
 
 Za temo mojega projekta sem izbrala turizem v Evropi. S pomočjo podatkov, pridobljenih preko Eurostata, Wikipedije ter drugih spletnih strani bom analiziral turizem glede na:
 - nočitve v posameznih državah
-- zaposlenost glede na panogo turizma
+- zaposlenost glede na panogo turizma (prenočišča, zračni transport, storitve, turistične agencije)
 - starostna sestava zaposljenih v turizmu
 - spreminjanje nočitev in zaposlenosti glede na leta
 
