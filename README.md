@@ -14,7 +14,7 @@ Cilj naloge je ugotoviti medsebojne relacije med zgoraj naštetimi spremenljivka
 
 ## Podatki in izgled
 
-Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebej v različnih leti, za posamezne države po različnih panogah v letu 2015 ali pa za EU28 po različnih letih za različne panoge. Zadnja tabela bo vsebovala starostno sestavo zaposlenih v turizmu v določeni državi po letih. 
+Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletnih strani v obliki HTML. Pridobljene podatke nameravam prikazati v obliki tabel, ter za boljšo predstavo tudi na zelmjevidu Evrope. Podatki bodo predstavljeni za vsako državo posebej v različnih leti, za posamezne države po različnih panogah v letih ter starostno sestavo zaposlenih v turizmu v določeni državi po letih. 
 
 ## Analiza
 
