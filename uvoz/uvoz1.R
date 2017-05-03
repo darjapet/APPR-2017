@@ -7,5 +7,5 @@ summary(tabela1)
 colnames(tabela1) <- c("stevnik", "destinacija", "mednarodni turisti 2015", "mednarodni turisti 2014", "sprememba 2013-2014",
                       "sprememba 2014-2015")
 sl <- locale("sl", decimal_mark = ".")
-
+summary(tabela1)
 View(tabela1)
