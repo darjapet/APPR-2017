@@ -18,13 +18,25 @@ Tabele sem večinoma pridobila z Eurostata v obliki CSV, nekatere tudi s spletni
 
 Tabela 1 je prenesena z Wikipedije in vključuje 10 najbolj obiskanih držav v Evropi ter je sestavljena na naslednji način:
 - stolpec 1: države
-- stoplec 2: mednarodni turisti v letu 2015
-- stoplec 3: mednarodni turisti v letu 2014
-- stoplec 4: sprememba 2013-2014
-- stoplec 5: sprememba 2014-2015
+- stolpec 2: mednarodni turisti v letu 2015
+- stolpec 3: mednarodni turisti v letu 2014
+- stolpec 4: sprememba 2013-2014
+- stolpec 5: sprememba 2014-2015
 
+Tabela 2 povzame število nočitev in jo sestavljajo naslednji stolpci:
+- stolpec 1: leto
+- stolpec 2: država
+- stolpec 3: domači/tujci
+- stolpec 4: vrsta nočitve
+- stolpec 5: število gostov
 
-
+Tabela 3 pa se nanaša na zaposljenost ljudi v turizmu:
+- stolpec 1: leto
+- stolpec 2: država
+- stolpec 3: panoga turizma
+- stolpec 4: starost delavcev
+- stolpec 5: vrsta zaposlitve
+- stolpec 6: število zaposlenih
 
 ## Analiza
 
