@@ -17,7 +17,7 @@ summary(tabela1)
 
 #=======================================================================================================
 
-
+                              
 tabela2 <- st_nocitev
 colnames(tabela2) <- c("leto", "drzava", "domacini/tujci", "vrednost", "vrsta nocitve",
                        "stevilo gostov")
@@ -26,7 +26,7 @@ tabela2 <- tabela2[-c(1), ]
 tabela2$vrednost <- NULL
 
 summary(tabela2)
-View(tabela2)
+#View(tabela2)
 
 
 #=======================================================================================================
