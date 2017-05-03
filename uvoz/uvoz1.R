@@ -26,7 +26,7 @@ tabela2 <- tabela2[-c(1), ]
 tabela2$vrednost <- NULL
 
 summary(tabela2)
-#View(tabela2)
+View(tabela2)
 
 
 #=======================================================================================================

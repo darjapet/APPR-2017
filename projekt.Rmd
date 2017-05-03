@@ -36,7 +36,7 @@ z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
 kable(head(tabela1))
-head(obcine)
+head(tabela1)
 ```
 
 Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
