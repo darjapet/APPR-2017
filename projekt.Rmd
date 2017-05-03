@@ -1,5 +1,5 @@
 ---
-title: "Poročilo pri predmetu Analiza podatkov s programom R"
+title: "Turizem v Evropi"
 author: "Darja Petrič"
 output:
   html_document: default
