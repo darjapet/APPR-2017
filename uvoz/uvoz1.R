@@ -15,16 +15,29 @@ summary(tabela1)
 #View(tabela1)
 
 
+#=======================================================================================================
+
+
 tabela2 <- st_nocitev
 colnames(tabela2) <- c("leto", "drzava", "domacini/tujci", "vrednost", "vrsta nocitve",
                        "stevilo gostov")
+
+tabela2 <- tabela2[-c(1), ]
+tabela2$vrednost <- NULL
+
 summary(tabela2)
 #View(tabela2)
+
+
+#=======================================================================================================
+
 
 tabela3 <- zaposljenost_v_turizmu
 colnames(tabela3) <- c("leto", "drzava", "panoga turizma", "starost delavcev", "vrsta zaposlitve", "tisoc",
                        "stevilo zaposlenih")
-tabela3$`stevilo zaposlenih` <- (tabela3$`stevilo zaposlenih`) * 1000
+
+tabela3 <- tabela3[-c(1), ]
+tabela3$tisoc <- NULL
 
 summary(tabela3)
 #View(tabela3)
