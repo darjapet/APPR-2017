@@ -1,3 +1,8 @@
+library(rvest)
+library(gsubfn)
+library(readr)
+library(dplyr)
+
 link <- "https://en.wikipedia.org/wiki/World_Tourism_rankings"
 stran <- html_session(link) %>% read_html()
 tabela1 <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
@@ -17,8 +22,11 @@ summary(tabela1)
 
 #=======================================================================================================
 
+sl <- locale("sl", decimal_mark = ".", grouping_mark = ",")
                               
-tabela2 <- st_nocitev
+tabela2 <- read_csv(file = "podatki/st_nocitev.csv", locale = sl, na = ":") %>%
+  filter(GEO != "European Union (28 countries)") %>%
+  filter(NACE_R2 != "Total - all NACE activities")
 colnames(tabela2) <- c("leto", "drzava", "domacini/tujci", "vrednost", "vrsta nocitve",
                        "stevilo gostov")
 
@@ -40,5 +48,5 @@ tabela3 <- tabela3[-c(1), ]
 tabela3$tisoc <- NULL
 
 summary(tabela3)
-#View(tabela3)
+View(tabela3)
 
