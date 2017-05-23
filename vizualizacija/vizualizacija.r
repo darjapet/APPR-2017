@@ -15,6 +15,11 @@ evropa <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturaleart
   pretvori.zemljevid() %>% filter(continent == "Europe" | sovereignt %in% c("Turkey", "Cyprus"),
                                   long > -30, sovereignt != "Russia")
  
+#prikaz praznega zemljevida
+
+ggplot() + geom_polygon(data = evropa, aes(x = long, y = lat, group = group)) + 
+  coord_map(xlim = c(-25, 40), ylim = c(32, 72))
+
 
 # Izračunamo povprečno velikost družine
 povprecja <- druzine %>% group_by(obcina) %>%

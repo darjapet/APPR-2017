@@ -28,8 +28,8 @@ tabela2 <- read_csv(file = "podatki/st_nocitev.csv", locale = sl, na = ":") %>%
   filter(GEO != "European Union (28 countries)") %>%
   filter(NACE_R2 != "Total - all NACE activities") %>%
   filter(INDIC_TO != "Nights spent, total")
-colnames(tabela2) <- c("leto", "drzava", "domacini/tujci", "vrednost", "vrsta nocitve",
-                       "stevilo gostov")
+colnames(tabela2) <- c("leto", "drzava", "domacini_tujci", "vrsta_nocitve",
+                       "stevilo_gostov")
 
 tabela2 <- tabela2[-c(1), ]
 tabela2$vrednost <- NULL
@@ -40,8 +40,12 @@ View(tabela2)
 
 #=======================================================================================================
 
+sl <- locale("sl", decimal_mark = ".", grouping_mark = ",")
 
-tabela3 <- zaposljenost_v_turizmu
+tabela3 <- read_csv(file = "podatki/zaposljenost_v_turizmu.csv", locale = sl, na = ":") %>%
+  filter(GEO != "European Union (28 countries)") %>%
+  filter(NACE_R2 != "Total - all NACE activities")
+
 colnames(tabela3) <- c("leto", "drzava", "panoga turizma", "starost delavcev", "vrsta zaposlitve", "tisoc",
                        "stevilo zaposlenih")
 
@@ -49,5 +53,5 @@ tabela3 <- tabela3[-c(1), ]
 tabela3$tisoc <- NULL
 
 summary(tabela3)
-View(tabela3)
+#View(tabela3)
 
