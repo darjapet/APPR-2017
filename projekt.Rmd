@@ -21,7 +21,7 @@ source("lib/libraries.r", encoding = "UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Za temo sem si izbrala turizem v Evropi. Moj cilj bo ugotoviti, koliko ljudi je zaposlenih v določeni vrsti turizma v različnih državah skozi leta, ter pogledati število turistov v določeni državi v večih letih. Podatke sem pridobila za večino evropskih držav v letih 2008 do 2015.
 
 ***
 
@@ -31,8 +31,7 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz1.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+Za željeno analizo sem uvozila podatke s Wikipedije v obliki HTML ter z Eurostata v obliki CSV. Dobljene podatke sem nato preoblikovala v obliko tidy data, da bom lahko s podatki delala analize.
 
 ```{r razpredelnice}
 kable(head(tabela1))
