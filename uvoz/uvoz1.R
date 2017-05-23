@@ -26,7 +26,8 @@ sl <- locale("sl", decimal_mark = ".", grouping_mark = ",")
                               
 tabela2 <- read_csv(file = "podatki/st_nocitev.csv", locale = sl, na = ":") %>%
   filter(GEO != "European Union (28 countries)") %>%
-  filter(NACE_R2 != "Total - all NACE activities")
+  filter(NACE_R2 != "Total - all NACE activities") %>%
+  filter(INDIC_TO != "Nights spent, total")
 colnames(tabela2) <- c("leto", "drzava", "domacini/tujci", "vrednost", "vrsta nocitve",
                        "stevilo gostov")
 
@@ -34,7 +35,7 @@ tabela2 <- tabela2[-c(1), ]
 tabela2$vrednost <- NULL
 
 summary(tabela2)
-#View(tabela2)
+View(tabela2)
 
 
 #=======================================================================================================
