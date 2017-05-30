@@ -17,7 +17,7 @@ evropa <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturaleart
 #prikaz praznega zemljevida
 
 ggplot() + geom_polygon(data = evropa, aes(x = long, y = lat, group = group)) + 
-  coord_map(xlim = c(-25, 40), ylim = c(32, 72))
+  coord_map(xlim = c(-25, 45), ylim = c(32, 72))
 
 
 
@@ -33,11 +33,12 @@ nocitve <- tabela2 %>% group_by(drzava, leto) %>%
   summarise(noc = sum(stevilo_gostov)) %>%
   group_by(drzava) %>% summarise(noc = mean(noc, na.rm = TRUE))
   
+evropa$name_sort <- gsub("^Slovak Republic$", "Slovakia", evropa$name_sort) %>% factor() #zemljevid
 
-z = ggplot() + geom_polygon (data = left_join(evropa, nocitve, by = c("name_sort" = "drzava")),
-                              aes (x = long, y = lat, group = group, fill = nocitve ))
-
-
+z <- ggplot() + geom_polygon(data = left_join(evropa, nocitve, by = c("name_sort" = "drzava")),
+                             aes(x = long, y = lat, group = group, fill = noc/1e6)) +
+  coord_map(xlim = c(-25, 40), ylim = c(32, 72)) +
+  guides(fill = guide_colorbar(title = "Nočitve (milijoni)"))
 
 
 #prikaz zaposljenih v turizmu v Sloveniji v letih
