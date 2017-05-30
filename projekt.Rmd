@@ -28,7 +28,7 @@ Za temo sem si izbrala turizem v Evropi. Moj cilj bo ugotoviti, koliko ljudi je 
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/uvoz1.r", encoding = "UTF-8")
+source("uvoz/uvoz1.R", encoding = "UTF-8")
 ```
 
 Za željeno analizo sem uvozila podatke s Wikipedije v obliki HTML ter z Eurostata v obliki CSV. Dobljene podatke sem nato preoblikovala v obliko tidy data, da bom lahko s podatki delala analize.

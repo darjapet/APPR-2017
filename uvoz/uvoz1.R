@@ -28,7 +28,8 @@ tabela2 <- read_csv(file = "podatki/st_nocitev.csv", locale = sl, na = ":") %>%
   filter(GEO != "European Union (28 countries)") %>%
   filter(NACE_R2 != "Total - all NACE activities") %>%
   filter(INDIC_TO != "Nights spent, total")
-colnames(tabela2) <- c("leto", "drzava", "domacini_tujci", "vrsta_nocitve",
+
+colnames(tabela2) <- c("leto", "drzava", "domacini_tujci", "vrednost", "vrsta_nocitve",
                        "stevilo_gostov")
 
 tabela2 <- tabela2[-c(1), ]
@@ -53,5 +54,5 @@ tabela3 <- tabela3[-c(1), ]
 tabela3$tisoc <- NULL
 
 summary(tabela3)
-#View(tabela3)
+View(tabela3)
 
