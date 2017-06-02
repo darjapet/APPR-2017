@@ -47,8 +47,8 @@ tabela3 <- read_csv(file = "podatki/zaposljenost_v_turizmu.csv", locale = sl, na
   filter(GEO != "European Union (28 countries)") %>%
   filter(NACE_R2 != "Total - all NACE activities")
 
-colnames(tabela3) <- c("leto", "drzava", "panoga turizma", "starost delavcev", "vrsta zaposlitve", "tisoc",
-                       "stevilo zaposlenih")
+colnames(tabela3) <- c("leto", "drzava", "panoga_turizma", "starost_delavcev", "vrsta_zaposlitve", "tisoc",
+                       "stevilo_zaposlenih")
 
 tabela3 <- tabela3[-c(1), ]
 tabela3$tisoc <- NULL

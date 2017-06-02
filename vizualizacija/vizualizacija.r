@@ -49,6 +49,12 @@ z <- ggplot() + geom_polygon(data = left_join(evropa, nocitve, by = c("name_sort
 
 #prikaz zaposljenih v turizmu v 10 najbolj obiskanih državah v letih - črtni
 
+g2 = ggplot(tabela3 %>% filter(drzava %in% c("France", "Italy", "Spain", "Germany", "Austria", "United Kingdom", "Netherlands","Croatia","Greece","Poland")) %>% 
+              #filter(stevilo_zaposlenih != is.na()) %>%
+              group_by(leto, drzava) %>%
+              summarise(zaposleni = sum(stevilo_zaposlenih)) %>%
+           aes(x = leto, y = zaposleni, color = drzava)) + geom_line()
+
 
 #-------------------------------------------------------------------
 
