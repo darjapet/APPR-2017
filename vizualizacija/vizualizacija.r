@@ -49,17 +49,33 @@ z <- ggplot() + geom_polygon(data = left_join(evropa, nocitve, by = c("name_sort
 
 #prikaz zaposljenih v turizmu v 10 najbolj obiskanih državah v letih - črtni
 
+g2 = ggplot(tabela3 %>% filter(drzava %in% c("France", "Italy", "Spain", "Germany", "Austria", "United Kingdom", "Netherlands","Croatia","Greece","Poland")) %>% 
+              group_by(leto, drzava) %>%
+              summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE)),
+           aes(x = leto, y = zaposleni, color = drzava)) + geom_line()
+
 
 #-------------------------------------------------------------------
 
 
 #število zaposljenih po starostnih skupinah skozi leta - črtni
 
+g3 = ggplot(tabela3 %>% 
+              group_by(leto, starost_delavcev) %>%
+              summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE)),
+            aes(x = leto, y = zaposleni, color = starost_delavcev)) + geom_line()
+
 
 #-------------------------------------------------------------------
 
 
 # število zaposljenih v evropi v posamezni panogi turizma v letu 2015 - stolpični
+g4 = ggplot(tabela3 %>% 
+              group_by(drzava, panoga_turizma) %>%
+              summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE))%>%
+              group_by(panoga_turizma),
+            aes(x = panoga_turizma, y = zaposleni, color = stevilo_zaposlenih)) + geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
     
 #-------------------------------------------------------------------
