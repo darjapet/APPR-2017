@@ -70,15 +70,33 @@ g3 = ggplot(tabela3 %>%
 
 
 # število zaposljenih v evropi v posamezni panogi turizma v letu 2015 - stolpični
-g4 = ggplot(tabela3 %>% 
-              group_by(drzava, panoga_turizma) %>%
-              summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE))%>%
-              group_by(panoga_turizma),
-            aes(x = panoga_turizma, y = zaposleni, color = stevilo_zaposlenih)) + geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+g4 = ggplot(tabela3 %>% filter(leto %in% c("2015"))%>%
+               group_by(panoga_turizma) %>%
+               summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE)),
+             aes(x = panoga_turizma, y = zaposleni)) + geom_col() +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
     
 #-------------------------------------------------------------------
 
 
 #število nstanitev v različnih območjih po evropi - primerjava domačini in tujci - stolpični
+
+domacini <- tabela2 %>% 
+  filter(domacini_tujci %in% c("Total nights spent by residents")) %>%
+  filter(vrsta_nocitve %in% c("Hotels and similar accommodation", "Holiday and other short-stay accommodation", "Camping grounds, recreational vehicle parks and trailer parks"))%>%
+group_by(vrsta_nocitve) %>%
+  summarise(gosti = sum(stevilo_gostov, na.rm = TRUE))
+
+tujci <- tabela2 %>% 
+  filter(domacini_tujci %in% c("Total nights spent by non-residents")) %>%
+  filter(vrsta_nocitve %in% c("Hotels and similar accommodation", "Holiday and other short-stay accommodation", "Camping grounds, recreational vehicle parks and trailer parks"))%>%
+  group_by(vrsta_nocitve) %>%
+  summarise(gosti = sum(stevilo_gostov, na.rm = TRUE))
+
+
+g5 = ggplot(domacini, aes(x = vrsta_nocitve, y = gosti / 1e9)) + geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+g6 = ggplot(tujci, aes(x = vrsta_nocitve, y = gosti / 1e9)) + geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
