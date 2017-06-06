@@ -16,7 +16,7 @@ sl <- locale("sl", decimal_mark = ".")
 tabela1$`mednarodni turisti 2015` <- (tabela1$`mednarodni turisti 2015` %>% parse_number()) * 1000000
 tabela1$`mednarodni turisti 2014` <- (tabela1$`mednarodni turisti 2014` %>% parse_number()) * 1000000
 
-summary(tabela1)
+#summary(tabela1)
 #View(tabela1)
 
 
@@ -35,8 +35,8 @@ colnames(tabela2) <- c("leto", "drzava", "domacini_tujci", "vrednost", "vrsta_no
 tabela2 <- tabela2[-c(1), ]
 tabela2$vrednost <- NULL
 
-summary(tabela2)
-View(tabela2)
+#summary(tabela2)
+#View(tabela2)
 
 
 #=======================================================================================================
@@ -53,6 +53,6 @@ colnames(tabela3) <- c("leto", "drzava", "panoga_turizma", "starost_delavcev", "
 tabela3 <- tabela3[-c(1), ]
 tabela3$tisoc <- NULL
 
-summary(tabela3)
-View(tabela3)
+#summary(tabela3)
+#View(tabela3)
 
