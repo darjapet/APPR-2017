@@ -82,21 +82,10 @@ g4 = ggplot(tabela3 %>% filter(leto %in% c("2015"))%>%
 
 #število nstanitev v različnih območjih po evropi - primerjava domačini in tujci - stolpični
 
-domacini <- tabela2 %>% 
-  filter(domacini_tujci %in% c("Total nights spent by residents")) %>%
+domacini_tujci <- tabela2 %>%
   filter(vrsta_nocitve %in% c("Hotels and similar accommodation", "Holiday and other short-stay accommodation", "Camping grounds, recreational vehicle parks and trailer parks"))%>%
-group_by(vrsta_nocitve) %>%
+group_by(vrsta_nocitve, domacini_tujci) %>%
   summarise(gosti = sum(stevilo_gostov, na.rm = TRUE))
 
-tujci <- tabela2 %>% 
-  filter(domacini_tujci %in% c("Total nights spent by non-residents")) %>%
-  filter(vrsta_nocitve %in% c("Hotels and similar accommodation", "Holiday and other short-stay accommodation", "Camping grounds, recreational vehicle parks and trailer parks"))%>%
-  group_by(vrsta_nocitve) %>%
-  summarise(gosti = sum(stevilo_gostov, na.rm = TRUE))
-
-
-g5 = ggplot(domacini, aes(x = vrsta_nocitve, y = gosti / 1e9)) + geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-g6 = ggplot(tujci, aes(x = vrsta_nocitve, y = gosti / 1e9)) + geom_bar(stat = "identity") +
+g5 = ggplot(domacini_tujci, aes(x = vrsta_nocitve, y = gosti / 1e9, fill = domacini_tujci)) + geom_bar(stat = "identity", position = "dodge") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
