@@ -48,33 +48,55 @@ source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 
 Na spodnjem zemljevidu sem prikazala število nočitev v posamezni evropski državi ( v miljonih) med leti 2008 in 2015. Tako lahko primerjamo, ter ugotovimo, da ima zahodna Evropa veliko večje število nočitev kot severna ali vzhodna.
 
+
+
 ```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid nočitev v Evropi'}
 zemljevid
 ```
 
+
+
 Pri številu močitev sem želila pogledati še kakšno vrsto namestitve ljudje najpogosteje izberejo - kampe, hostle ali hotele - ter kolikšno je število domačinov v primerjavii s tujci. V spodnjem stolpčnem diagramu lahko vidimo, da je načeloma več domačinov, kot tujcev (kar pri nas ni tako običajno), vendar pa diagram prikazuje vsoto gostov po vseh evropskih državah. 
+
+
 
 ```{r g5, echo=FALSE, fig.align='center', fig.cap='Vrste nočitev - prmerjava domačini/tujci'}
 g5 + xlab("vrsta nocitve") + ylab("stevilo gostov")
 ```
 
+
+
 Po pregledu nočitev sem analizirala še zaposlenots ljudi v turizmu, ter dobila naslednje grafe:
+
+
 
 ```{r g2, echo=FALSE, fig.align='center', fig.cap='Primerjava števila zaposlenih v 10 najbolj obiskanih državah skozi leta'}
 g2 + xlab("leto") + ylab("število zaposlenih")
 ```
 
+
+
 Pri pregledu števila zaposlnih v 10 nabolj obiskani državah v Evropi sem ugotovila, da se za posamezno državo ni dosti spremenilo, z izjemo Španije in Velike Britanije. Graf nam v primerjavi z zgornjim zemljevidom tudi prikaže, da se število nočitev v posamezni državi ne povezuje s številom zaposlenih v turizmu.
+
+
 
 ```{r g3, echo=FALSE, fig.align='center', fig.cap='Število zaposlenih skozi leta po starostnih skupinah'}
 g3 + xlab("leto") + ylab("število zaposlenih")
 ```
 
+
+
 Število zaposlenih se je skozi čas večalo, a starostna sestava je skozi leta ostajala podobna - največ zaposlenih je bilo starih med 25-34 in 35-44, manj je bilo starješih od 45, najmanj pa je bilo mladih med 15-24 (delo ob študiju).
+
+
 
 ```{r g4, echo=FALSE, fig.align='center', fig.cap='Zaposljenost glede na sektor turizma v letu 2015'}
 g4 + xlab("panoga turizma") + ylab("število zaposlenih")
 ```
+
+
+
+
 
 Pri pregledu zaposlenih sem še analizirala, v katerem sektorju turizma je največ zaposlenih. Podatke sem tu vzela za leto 2015 za vse države Evrope. Kot pričakovano je največ (približno 80%) zaposlenih v urejanju prenočišč in hrane, veliko manj pa jih je v transportu ali turističnih agencijah.
 
