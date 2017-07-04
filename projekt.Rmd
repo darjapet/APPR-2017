@@ -42,15 +42,16 @@ head(tabela1)
 
 # Analiza in vizualizacija podatkov
 
-```{r vizualizacija, echo=FALSE, message=FALSE}
+```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE}
 source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
+
 ```
 
 Na spodnjem zemljevidu sem prikazala število nočitev v posamezni evropski državi ( v miljonih) med leti 2008 in 2015. Tako lahko primerjamo, ter ugotovimo, da ima zahodna Evropa veliko večje število nočitev kot severna ali vzhodna.
 
 
 
-```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid nočitev v Evropi'}
+```{r zemljevid, echo=FALSE, fig.align='center'}
 zemljevid
 ```
 
