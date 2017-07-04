@@ -60,7 +60,7 @@ Pri številu močitev sem želila pogledati še kakšno vrsto namestitve ljudje 
 
 
 
-```{r g5, echo=FALSE, fig.align='center', fig.cap='Vrste nočitev - prmerjava domačini/tujci'}
+```{r g5, echo=FALSE, fig.align='center'}
 g5 + xlab("vrsta nocitve") + ylab("stevilo gostov")
 ```
 
@@ -70,7 +70,7 @@ Po pregledu nočitev sem analizirala še zaposlenots ljudi v turizmu, ter dobila
 
 
 
-```{r g2, echo=FALSE, fig.align='center', fig.cap='Primerjava števila zaposlenih v 10 najbolj obiskanih državah skozi leta'}
+```{r g2, echo=FALSE, fig.align='center'}
 g2 + xlab("leto") + ylab("število zaposlenih")
 ```
 
@@ -80,7 +80,7 @@ Pri pregledu števila zaposlnih v 10 nabolj obiskani državah v Evropi sem ugoto
 
 
 
-```{r g3, echo=FALSE, fig.align='center', fig.cap='Število zaposlenih skozi leta po starostnih skupinah'}
+```{r g3, echo=FALSE, fig.align='center'}
 g3 + xlab("leto") + ylab("število zaposlenih")
 ```
 
@@ -90,7 +90,7 @@ g3 + xlab("leto") + ylab("število zaposlenih")
 
 
 
-```{r g4, echo=FALSE, fig.align='center', fig.cap='Zaposljenost glede na sektor turizma v letu 2015'}
+```{r g4, echo=FALSE, fig.align='center'}
 g4 + xlab("panoga turizma") + ylab("število zaposlenih")
 ```
 

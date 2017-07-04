@@ -88,4 +88,4 @@ group_by(vrsta_nocitve, domacini_tujci) %>%
   summarise(gosti = sum(stevilo_gostov, na.rm = TRUE))
 
 g5 = ggplot(domacini_tujci, aes(x = vrsta_nocitve, y = gosti / 1e9, fill = domacini_tujci)) + geom_bar(stat = "identity", position = "dodge") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + labs(x="vrsta nočitve", y="število gostov")
