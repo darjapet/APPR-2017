@@ -17,9 +17,7 @@ evropa <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturaleart
  
 #prikaz praznega zemljevida
 
-ggplot() + geom_polygon(data = evropa, aes(x = long, y = lat, group = group)) + 
-  coord_map(xlim = c(-25, 45), ylim = c(32, 72)) + theme(axis.title.x = element_blank(), axis.title.y = element_blank())
-
+ggplot() + geom_polygon(data = evropa, aes(x = long, y = lat, group = group)) + xlab(".") + ylab(".") + coord_map(xlim = c(-25, 45), ylim = c(32, 72)) 
 
 #-------------------------------------------------------------------
 
@@ -67,7 +65,7 @@ g2 = ggplot(tabela3 %>% filter(drzava %in% c("France", "Italy", "Spain", "German
               group_by(leto, drzava) %>%
               summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE)),
            aes(x = leto, y = zaposleni, color = slovar2[drzava])) + geom_line() +
-          guides(fill = guide_colourbar(title = "Država"))
+          guides(color = guide_legend(title = "Država"))
 
 
 #-------------------------------------------------------------------
@@ -85,7 +83,9 @@ slovar3 <- c(
 g3 = ggplot(tabela3 %>% 
               group_by(leto, starost_delavcev) %>%
               summarise(zaposleni = sum(stevilo_zaposlenih, na.rm = TRUE)),
-            aes(x = leto, y = zaposleni, color = slovar3[starost_delavcev])) + geom_line()
+            aes(x = leto, y = zaposleni, color = slovar3[starost_delavcev])) + geom_line() +
+  guides(color = guide_legend(title = "Starost"))
+
 
 
 #-------------------------------------------------------------------
