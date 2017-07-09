@@ -6,15 +6,13 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(("Izberi željene podatke"), 
-                 sliderInput(inputId = "num",
+                 sliderInput(inputId = "leto",
                             label = "Leto",
                             value = 2011, min = 2008, max = 2015,
                             round = TRUE,
                             animate = TRUE),
-                 selectInput("država", "Država:", choices = c(slovar[tabela3$drzava]), 
-                             multiple = FALSE),
-                 selectInput("podatki", "Kaj želim vedeti", 
-                             choices = c("Zaposleni", "Gosti"))),
+                 selectInput("drzava", "Država:", choices = c(slovar[tabela3$drzava]), 
+                             multiple = FALSE)),
     
     mainPanel(("tukaj bodo podatki")
                       )
