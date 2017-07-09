@@ -48,6 +48,5 @@ shinyUI(fluidPage(
                                                               "Turčija" = "Turkey"), 
                              multiple = FALSE)),
     
-    mainPanel(("tukaj bodo podatki"), plotOutput("graf")
-                      )
-)))
+    mainPanel("tukaj bodo podatki", plotOutput("graf"))))
+)
