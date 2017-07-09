@@ -2,16 +2,20 @@ library(shiny)
 
 shinyUI(fluidPage(
   
-  titlePanel("Slovenske občine"),
+  titlePanel(title = "Turizem v Evropskih državah"),
   
-  tabsetPanel(
-      tabPanel("Velikost družine",
-               DT::dataTableOutput("druzine")),
-      
-      tabPanel("Število naselij",
-               sidebarPanel(
-                  uiOutput("pokrajine")
-                ),
-               mainPanel(plotOutput("naselja")))
-    )
-))
+  sidebarLayout(
+    sidebarPanel(("Izberi željene podatke"), 
+                 sliderInput(inputId = "num",
+                            label = "Leto",
+                            value = 2011, min = 2008, max = 2015,
+                            round = TRUE,
+                            animate = TRUE),
+                 selectInput("država", "Država:", choices = c(slovar[tabela3$drzava]), 
+                             multiple = FALSE),
+                 selectInput("podatki", "Kaj želim vedeti", 
+                             choices = c("Zaposleni", "Gosti"))),
+    
+    mainPanel(("tukaj bodo podatki")
+                      )
+)))
