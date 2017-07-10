@@ -48,5 +48,5 @@ shinyUI(fluidPage(
                                                               "Turčija" = "Turkey"), 
                              multiple = FALSE)),
     
-    mainPanel("tukaj bodo podatki", plotOutput("graf"))))
+    mainPanel("opomba: pri gostih je število oseb * 1e5", plotOutput("graf"))))
 )
